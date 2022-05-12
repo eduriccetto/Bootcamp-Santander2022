@@ -1,9 +1,17 @@
 package model;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+
+@Embeddable
 public class Conta {
 
     //Atributos
+    @Column(name = "conta_numero")
     private Long numero;
+
+    @Column(name = "conta_saldo")
     private Double saudo;
 
     //Getters and Setters
